@@ -1,0 +1,17 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_goodbye",
+    "intent_people_involved_sum",
+    "intent_case_accusers",
+    "intent_view_case",
+    "entity_case_id",
+    "slot_case_id_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_view_case",
+    "prev_actions_criminal"
+  ]
+}

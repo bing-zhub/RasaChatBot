@@ -116,6 +116,16 @@
             "entity": "case_id"
           }
         ]
+      },
+      {
+        "text": "查看一下案件",
+        "intent": "view_case",
+        "entities": []
+      },
+      {
+        "text": "案件",
+        "intent": "view_case",
+        "entities": []
       }
     ]
   }

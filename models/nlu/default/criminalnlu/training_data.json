@@ -116,6 +116,16 @@
           }
         ],
         "text": "哪些人参与浙1121刑初385号案件"
+      },
+      {
+        "intent": "view_case",
+        "entities": [],
+        "text": "查看一下案件"
+      },
+      {
+        "intent": "view_case",
+        "entities": [],
+        "text": "案件"
       }
     ],
     "regex_features": [],

@@ -11,7 +11,7 @@ def train_nlu(data, config, model_dir):
 
 def run_nlu():
   interpreter = Interpreter.load('models/nlu/default/criminalnlu/', RasaNLUConfig('config_spacy.json'))
-  print(interpreter.parse(u"有多少人参与浙1102刑初111号案件"))
+  print(interpreter.parse(u"参与浙1102刑初111号案件的有多少人"))
 
 
 if __name__ == '__main__':
