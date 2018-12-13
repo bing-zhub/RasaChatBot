@@ -16,6 +16,374 @@
       {
         "intent": "greet",
         "text": "拜拜"
+      },
+      {
+        "intent": "viewCaseDefendantsNum",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "浙1125刑初242号",
+            "entity": "case"
+          }
+        ],
+        "text": "浙1125刑初242号案件有多少人涉案"
+      },
+      {
+        "intent": "viewCaseDefendants",
+        "text": "都是谁"
+      },
+      {
+        "intent": "viewCaseDefendants",
+        "text": "都有谁"
+      },
+      {
+        "intent": "viewCaseDefendants",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "浙1125刑初242号",
+            "entity": "case"
+          }
+        ],
+        "text": "有哪些人参与浙1125刑初242号案件"
+      },
+      {
+        "intent": "viewCaseDefendants",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "浙1124刑初242号",
+            "entity": "case"
+          }
+        ],
+        "text": "有多少人涉及浙1124刑初242号案件"
+      },
+      {
+        "intent": "viewCaseDefendantsNum",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "浙1125刑初242号",
+            "entity": "case"
+          }
+        ],
+        "text": "浙1125刑初242号案件的涉案人数是多少"
+      },
+      {
+        "intent": "viewCaseDefendants",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "浙1125刑初242号",
+            "entity": "case"
+          }
+        ],
+        "text": "浙1125刑初242号案件的涉案人员有哪些"
+      },
+      {
+        "intent": "viewCase",
+        "text": "查看案件"
+      },
+      {
+        "intent": "viewCase",
+        "text": "看一下案子"
+      },
+      {
+        "intent": "viewCase",
+        "text": "查一下案件"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "出生地",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的出生地是哪里"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "哪里出生",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红在哪里出生"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "出生地",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的出生地是哪"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "时候出生",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红什么时候出生"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "生日",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的生日是什么时候"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "个人资料",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的个人资料"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "个人资料",
+            "entity": "item"
+          }
+        ],
+        "text": "看一下张青红的个人资料"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "性别",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红是男还是女"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "性别",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的性别"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 9,
+            "value": "户籍所在地",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的户籍所在地是哪"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "文化程度",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的文化程度怎样"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "贩毒",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红贩毒多少"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "民族",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红是哪个民族"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "现住址",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的现住址是哪里"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "职业",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红的职业是什么"
+      },
+      {
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "生日",
+            "entity": "item"
+          }
+        ],
+        "text": "张青红何时出生"
       }
     ],
     "regex_features": [],

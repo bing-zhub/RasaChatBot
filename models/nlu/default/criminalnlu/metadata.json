@@ -13,7 +13,7 @@
         },
         {
             "name": "ner_mitie",
-            "classifier_file": null,
+            "classifier_file": "entity_extractor.dat",
             "class": "rasa_nlu.extractors.mitie_entity_extractor.MitieEntityExtractor"
         },
         {
@@ -49,6 +49,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20181213-112804",
+    "trained_at": "20181213-165009",
     "rasa_nlu_version": "0.12.2"
 }

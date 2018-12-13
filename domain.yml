@@ -1,0 +1,33 @@
+%YAML 1.1
+---
+actions:
+- action_view_case_defendants_num
+- utter_greet
+- utter_ask_case
+- action_view_case_defendants
+- utter_goodbye
+- utter_ask_what
+- action_view_defendant_data
+entities:
+- item
+- case
+intents:
+- viewCaseDefendantsNum
+- viewCaseDefendants
+- greet
+- goodbye
+- viewCase
+- viewDefendantData
+slots:
+  case:
+    type: text
+templates:
+  utter_ask_case:
+  - text: 哪个案件?
+  utter_ask_what:
+  - text: 要对案件进行何种操作?
+  utter_goodbye:
+  - text: 再见~
+  - text: 一会见~
+  utter_greet:
+  - text: 你好~ 有什么可以帮你
