@@ -2,25 +2,23 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "你好",
         "intent": "goodbye",
-        "entities": []
+        "text": "你好"
       },
       {
-        "text": "嗨",
         "intent": "goodbye",
-        "entities": []
+        "text": "嗨"
       },
       {
-        "text": "再见",
         "intent": "greet",
-        "entities": []
+        "text": "再见"
       },
       {
-        "text": "拜拜",
         "intent": "greet",
-        "entities": []
+        "text": "拜拜"
       }
-    ]
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
   }
 }
