@@ -1,0 +1,47 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "case",
+        "item",
+        "defendant"
+      ]
+    },
+    "action_view_case_defendants_num": {
+      "slots": [
+        "case"
+      ]
+    },
+    "action_view_case_defendants": {
+      "slots": [
+        "case"
+      ]
+    },
+    "action_view_defendant_data": {
+      "slots": [
+        "defendant"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_ask_case": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.12.3",
+  "python": "3.6.7",
+  "max_histories": [
+    5,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "trained_at": "20181214-083056"
+}

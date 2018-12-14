@@ -1,0 +1,28 @@
+{
+  "states": [
+    "intent_goodbye",
+    "intent_greet",
+    "intent_viewCase",
+    "intent_viewCaseDefendants",
+    "intent_viewCaseDefendantsNum",
+    "intent_viewCaseDetail",
+    "intent_viewDefendantData",
+    "entity_case",
+    "entity_item",
+    "entity_defendant",
+    "slot_case_0",
+    "slot_defendant_0",
+    "slot_item_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_ask_case",
+    "prev_utter_ask_what",
+    "prev_action_view_case_defendants",
+    "prev_action_view_case_defendants_num",
+    "prev_action_view_defendant_data"
+  ]
+}

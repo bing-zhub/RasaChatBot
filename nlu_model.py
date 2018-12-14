@@ -15,5 +15,5 @@ def run_nlu():
   print(interpreter.parse("张青红何时出生"))
 
 if __name__ == '__main__':
-  # train_nlu('./data/data.json', './config/config.yml', './models/nlu')
-  run_nlu()
+  train_nlu('./data/data.json', './config/config.yml', './models/nlu')
+  # run_nlu()

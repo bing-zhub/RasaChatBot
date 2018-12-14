@@ -1,11 +1,16 @@
 slots:
   case:
     type: text
+  item:
+    type: text
+  defendant:
+    type: text
 
 intents:
  - greet
  - goodbye
  - viewCase
+ - viewCaseDetail
  - viewCaseDefendants
  - viewCaseDefendantsNum
  - viewDefendantData
@@ -14,6 +19,7 @@ intents:
 entities:
  - case
  - item
+ - defendant
 
 templates:
   utter_greet:

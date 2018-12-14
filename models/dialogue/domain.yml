@@ -1,0 +1,55 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_case
+- utter_ask_what
+- action_view_case_defendants
+- action_view_case_defendants_num
+- action_view_defendant_data
+config:
+  store_entities_as_slots: true
+entities:
+- case
+- item
+- defendant
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- viewCase:
+    use_entities: true
+- viewCaseDetail:
+    use_entities: true
+- viewCaseDefendants:
+    use_entities: true
+- viewCaseDefendantsNum:
+    use_entities: true
+- viewDefendantData:
+    use_entities: true
+slots:
+  case:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  defendant:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  item:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_case:
+  - text: 哪个案件?
+  utter_ask_what:
+  - text: 要对案件进行何种操作?
+  utter_goodbye:
+  - text: 再见~
+  - text: 一会见~
+  utter_greet:
+  - text: 你好~ 有什么可以帮你

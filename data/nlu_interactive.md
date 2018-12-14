@@ -1,8 +1,11 @@
 ## intent:greet
 - 你好
 
-## intent:viewCaseDefendants
-- 都有哪些人
+## intent:viewCase
+- 查看案件
 
-## intent:viewCaseDefendantsNum
-- [浙1124刑初242号](case)案件有多少人涉案
+## intent:viewCaseDefendants
+- 查看案件涉案人员
+
+## intent:viewCaseDetail
+- [浙1123刑初231号](case)案件
