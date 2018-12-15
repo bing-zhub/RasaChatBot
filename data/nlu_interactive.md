@@ -5,7 +5,13 @@
 - 查看案件
 
 ## intent:viewCaseDefendants
-- 查看案件涉案人员
+- 都是谁
+
+## intent:viewCaseDefendantsNum
+- 这个案件有多少涉案人员
 
 ## intent:viewCaseDetail
-- [浙1123刑初231号](case)案件
+- [浙123刑初231号](case)
+
+## intent:viewDefendantData
+- [张日天](defendant)的[生日](item)是什么时候

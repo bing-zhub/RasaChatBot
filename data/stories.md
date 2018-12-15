@@ -200,3 +200,47 @@
     - action_view_case_defendants
     - slot{"case": "\u6d591123\u5211\u521d231\u53f7"}
 
+## Generated Story -695018272284069370
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDetail{"case": "\u6d591102\u5211\u521d123\u53f7"}
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+    - utter_ask_what
+* viewCaseDefendantsNum
+    - action_view_case_defendants_num
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+* viewCaseDefendants
+    - action_view_case_defendants
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+* viewDefendantData{"defendant": "\u738b\u5fb7\u53d1", "item": "\u751f\u65e5"}
+    - slot{"defendant": "\u738b\u5fb7\u53d1"}
+    - slot{"item": "\u751f\u65e5"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u738b\u5fb7\u53d1"}
+* viewDefendantData{"item": "\u51fa\u751f\u5730"}
+    - slot{"item": "\u51fa\u751f\u5730"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u738b\u5fb7\u53d1"}
+
+## Generated Story 363049498749074762
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDetail{"case": "\u6d59123\u5211\u521d231\u53f7"}
+    - slot{"case": "\u6d59123\u5211\u521d231\u53f7"}
+    - utter_ask_what
+* viewCaseDefendantsNum
+    - action_view_case_defendants_num
+    - slot{"case": "\u6d59123\u5211\u521d231\u53f7"}
+* viewCaseDefendants
+    - action_view_case_defendants
+    - slot{"case": "\u6d59123\u5211\u521d231\u53f7"}
+* viewDefendantData{"defendant": "\u5f20\u65e5\u5929", "item": "\u751f\u65e5"}
+    - slot{"defendant": "\u5f20\u65e5\u5929"}
+    - slot{"item": "\u751f\u65e5"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u5f20\u65e5\u5929"}
+
