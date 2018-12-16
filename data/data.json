@@ -791,6 +791,24 @@
             "entity": "item"
           }
         ]
+      },
+      {
+        "text": "张青红的出生日期什么时候",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "生日",
+            "entity": "item"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张青红",
+            "entity": "defendant"
+          }
+        ]
       }
     ]
   }
