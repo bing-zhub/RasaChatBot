@@ -3,23 +3,23 @@
 actions:
 - utter_greet
 - action_view_case_defendants_num
+- utter_goodbye
 - utter_ask_what
 - action_view_case_defendants
 - utter_ask_case
 - action_view_defendant_data
-- utter_goodbye
 entities:
-- item
 - case
 - defendant
+- item
 intents:
-- greet
-- viewCaseDefendantsNum
 - viewDefendantData
-- viewCase
-- viewCaseDefendants
-- viewCaseDetail
+- greet
 - goodbye
+- viewCase
+- viewCaseDetail
+- viewCaseDefendants
+- viewCaseDefendantsNum
 slots:
   case:
     type: text

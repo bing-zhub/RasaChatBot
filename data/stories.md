@@ -244,3 +244,36 @@
     - action_view_defendant_data
     - slot{"defendant": "\u5f20\u65e5\u5929"}
 
+## Generated Story -3339765600630234661
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDetail{"case": "\u6d591123\u5211\u521d12345\u53f7"}
+    - slot{"case": "\u6d591123\u5211\u521d12345\u53f7"}
+    - utter_ask_what
+* viewCaseDefendants
+    - action_view_case_defendants
+
+## Generated Story 2995254090949476400
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDetail{"case": "\u6d591123\u5211\u521d23\u53f7"}
+    - slot{"case": "\u6d591123\u5211\u521d23\u53f7"}
+    - utter_ask_what
+* viewCaseDefendants
+    - action_view_case_defendants
+
+## Generated Story 4153238785900342145
+* viewDefendantData{"defendant": "\u5f20\u9752\u7ea2", "item": "\u51fa\u751f\u65e5\u671f"}
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+    - slot{"item": "\u51fa\u751f\u65e5\u671f"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+* viewDefendantData{"item": "\u751f\u65e5"}
+    - slot{"item": "\u751f\u65e5"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+
