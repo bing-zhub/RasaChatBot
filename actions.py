@@ -1,8 +1,9 @@
-from py2neo import Graph
+from py2neo import Graph, NodeMatcher
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
 
-
+graph = Graph("http://neo4j:admin@localhost:7474")
+selector = NodeMatcher(graph)
 
 class viewCaseDefendants(Action):
     def name(self):
@@ -10,8 +11,14 @@ class viewCaseDefendants(Action):
 
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
-
-        response = "-----action----查看所有涉案人员, 案件号:{}".format(case)
+        all_defendants = ""
+        a = list(selector.match("被告人", 案件号__endswith=case))
+        for _ in a:
+            if (a[a.__len__() - 1] == _):
+                all_defendants = all_defendants + _['name'] + "."
+            else:
+                all_defendants = all_defendants + _['name'] + ','
+        response = "{}案件, 有涉案人员:{}".format(case, all_defendants)
         dispatcher.utter_message(response)
         return [SlotSet('case', case)]
 
@@ -23,7 +30,13 @@ class viewCaseDefendantsNum(Action):
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
 
-        response = "-----action----查看所有涉案人数, 案件号:{}".format(case)
+        n = list(selector.match("被告人", 案件号__contains=case)).__len__()
+
+        if(n == 0):
+            response = "没有这个案件, 查证后再说吧~"
+        else:
+            response = "{}案件共有{}个涉案人员".format(case, n)
+
         dispatcher.utter_message(response)
         return [SlotSet('case', case)]
 
@@ -33,7 +46,6 @@ class viewDefendantData(Action):
         return 'action_view_defendant_data'
 
     def run(self, dispatcher, tracker, domain):
-        graph = Graph("http://neo4j:admin@localhost:7474")
         defendant = tracker.get_slot('defendant')
         item = tracker.get_slot('item')
         print(defendant)
@@ -50,20 +62,19 @@ class viewDefendantData(Action):
         elif item == "生日":
             response = "{}的生日是{}".format(defendant, person['出生日期'])
         elif item == "性别":
-            response = "{}的性别是{}:".format(defendant, person['性别'])
+            response = "{}的性别是:{}".format(defendant, person['性别'])
         elif item == "户籍所在地":
-            response = "{}的户籍所在地是{}:".format(defendant, person['户籍所在地'])
+            response = "{}的户籍所在地是:{}".format(defendant, person['户籍所在地'])
         elif item == "文化程度":
-            response = "{}的文化程度是{}:".format(defendant, person['文化程度'])
+            response = "{}的文化程度是:{}".format(defendant, person['文化程度'])
         elif item == "贩毒量":
-            response = "{}的贩毒量是{}:".format(defendant, person['毒品数量'])
+            response = "{}的贩毒量是:{}".format(defendant, person['毒品数量'])
         elif item == "民族":
-            response = "{}的民族是{}:".format(defendant, person['民族'])
+            response = "{}的民族是:{}".format(defendant, person['民族'])
         elif item == "现住址":
-            response = "{}的现住址是{}:".format(defendant, person['现住址'])
+            response = "{}的现住址是:{}".format(defendant, person['现住址'])
         elif item == "职业":
-            response = "{}的职业是{}:".format(defendant, person['职业'])
-
+            response = "{}的职业是:{}".format(defendant, person['职业'])
 
         dispatcher.utter_message(response)
         return [SlotSet('defendant', defendant)]
@@ -72,4 +83,13 @@ class viewDefendantData(Action):
 if __name__ == '__main__':
     # data = graph.match("购买人")
     # for rel in data:
-    print(graph.nodes.match("被告人", name="张青红").first()['出生日期'])
+    selector = NodeMatcher(graph)
+    all_defendants = ""
+    a = list(selector.match("被告人", 案件号__endswith="浙1125刑初148号"))
+    for _ in a:
+        if(a[a.__len__()-1] == _):
+            all_defendants = all_defendants + _['name'] + "."
+        else:
+            all_defendants = all_defendants + _['name'] + ','
+
+    print(all_defendants)

@@ -47,7 +47,7 @@ templates:
   utter_ask_case:
   - text: 哪个案件?
   utter_ask_what:
-  - text: 要对案件进行何种操作?
+  - text: 你想知道点什么?
   utter_goodbye:
   - text: 再见~
   - text: 一会见~

@@ -304,3 +304,18 @@
     - utter_goodbye
     - action_restart
 
+## Generated Story 3106403303970813419
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDetail{"case": "\u6d591102\u5211\u521d123\u53f7"}
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+    - utter_ask_what
+* viewCaseDefendantsNum
+    - action_view_case_defendants_num
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+* viewCaseDefendants
+    - action_view_case_defendants
+    - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
+
