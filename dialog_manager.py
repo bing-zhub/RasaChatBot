@@ -24,7 +24,7 @@ def train_dialogue(domain_file = './data/criminal_domain.yml',
 	return agent
 	
 def run_criminal_bot(serve_forever=True):
-	interpreter = RasaNLUInterpreter('./models/nlu/default/criminalnlu')
+	interpreter = RasaNLUInterpreter('./models/default/criminalnlu')
 	action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
 	agent = Agent.load('./models/dialogue', interpreter=interpreter, action_endpoint=action_endpoint)
 	rasa_core.run.serve_application(agent ,channel='cmdline')
@@ -32,5 +32,5 @@ def run_criminal_bot(serve_forever=True):
 	return agent
 	
 if __name__ == '__main__':
-	train_dialogue()
+	# train_diadlogue()
 	run_criminal_bot()

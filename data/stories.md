@@ -277,3 +277,30 @@
     - action_view_defendant_data
     - slot{"defendant": "\u5f20\u9752\u7ea2"}
 
+## Generated Story 524008979294329323
+* greet
+    - utter_greet
+* viewCase
+    - utter_ask_case
+* viewCaseDefendantsNum{"case": "\u6d591102\u5211\u521d213\u53f7"}
+    - slot{"case": "\u6d591102\u5211\u521d213\u53f7"}
+    - utter_ask_what
+* viewCaseDefendantsNum
+    - action_view_case_defendants_num
+    - slot{"case": "\u6d591102\u5211\u521d213\u53f7"}
+* viewCaseDefendants
+    - action_view_case_defendants
+    - slot{"case": "\u6d591102\u5211\u521d213\u53f7"}
+* viewDefendantData{"defendant": "\u5f20\u9752\u7ea2", "item": "\u751f\u65e5"}
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+    - slot{"item": "\u751f\u65e5"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+* viewDefendantData{"item": "\u51fa\u751f\u5730"}
+    - slot{"item": "\u51fa\u751f\u5730"}
+    - action_view_defendant_data
+    - slot{"defendant": "\u5f20\u9752\u7ea2"}
+* goodbye
+    - utter_goodbye
+    - action_restart
+
