@@ -5,14 +5,15 @@ from rasa_core_sdk.events import SlotSet
 graph = Graph("http://neo4j:admin@localhost:7474")
 selector = NodeMatcher(graph)
 
-class viewCaseDefendants(Action):
+
+class ViewCaseDefendants(Action):
     def name(self):
         return 'action_view_case_defendants'
 
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
         all_defendants = ""
-        a = list(selector.match("被告人", 案件号__endswith=case))
+        a = list(selector.match("被告人", 案件号__contains=case))
         for _ in a:
             if (a[a.__len__() - 1] == _):
                 all_defendants = all_defendants + _['name'] + "."
@@ -23,7 +24,7 @@ class viewCaseDefendants(Action):
         return [SlotSet('case', case)]
 
 
-class viewCaseDefendantsNum(Action):
+class ViewCaseDefendantsNum(Action):
     def name(self):
         return 'action_view_case_defendants_num'
 
@@ -41,7 +42,7 @@ class viewCaseDefendantsNum(Action):
         return [SlotSet('case', case)]
 
 
-class viewDefendantData(Action):
+class ViewDefendantData(Action):
     def name(self):
         return 'action_view_defendant_data'
 
@@ -79,6 +80,22 @@ class viewDefendantData(Action):
         dispatcher.utter_message(response)
         return [SlotSet('defendant', defendant)]
 
+
+class ViewCaseDetail(Action):
+    def name(self):
+        return 'action_view_case_detail'
+
+    def run(self, dispatcher, tracker, domain):
+        case = tracker.get_slot('case')
+        found = graph.nodes.match("被告人", 案件号__contains=case)
+        n = list(found).__len__()
+        if(n==0):
+            response = "没有找到这个案件, 是不是案件号错了"
+        else:
+            response = "需要我做点什么?"
+
+        dispatcher.utter_message(response)
+        return [SlotSet('case',case)]
 
 if __name__ == '__main__':
     # data = graph.match("购买人")

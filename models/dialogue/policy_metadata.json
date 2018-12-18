@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "item",
         "defendant",
+        "item",
         "case"
       ]
     },
@@ -17,21 +17,21 @@
         "case"
       ]
     },
+    "utter_goodbye": {
+      "slots": []
+    },
     "action_view_defendant_data": {
       "slots": [
         "defendant"
       ]
     },
-    "utter_goodbye": {
+    "action_restart": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
     },
     "utter_ask_case": {
-      "slots": []
-    },
-    "action_restart": {
       "slots": []
     }
   },
@@ -50,5 +50,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20181217-203211"
+  "trained_at": "20181218-103637"
 }

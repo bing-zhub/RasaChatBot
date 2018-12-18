@@ -1,4 +1,4 @@
-## stroy_01
+## story_01
 * greet
   - utter_greet
 ## story_02

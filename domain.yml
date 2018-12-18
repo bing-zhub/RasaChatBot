@@ -17,9 +17,9 @@ intents:
 - viewCase
 - viewCaseDefendants
 - viewCaseDefendantsNum
+- viewDefendantData
 - greet
 - goodbye
-- viewDefendantData
 slots:
   case:
     type: text
