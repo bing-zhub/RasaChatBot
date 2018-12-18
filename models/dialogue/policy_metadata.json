@@ -3,8 +3,8 @@
     "action_listen": {
       "slots": [
         "defendant",
-        "item",
-        "case"
+        "case",
+        "item"
       ]
     },
     "action_view_case_defendants_num": {
@@ -17,13 +17,13 @@
         "case"
       ]
     },
-    "utter_goodbye": {
-      "slots": []
-    },
     "action_view_defendant_data": {
       "slots": [
         "defendant"
       ]
+    },
+    "utter_goodbye": {
+      "slots": []
     },
     "action_restart": {
       "slots": []
@@ -50,5 +50,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20181218-103637"
+  "trained_at": "20181218-105351"
 }

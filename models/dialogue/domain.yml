@@ -4,10 +4,10 @@ actions:
 - utter_greet
 - utter_goodbye
 - utter_ask_case
-- utter_ask_what
 - action_view_case_defendants
 - action_view_case_defendants_num
 - action_view_defendant_data
+- action_view_case_detail
 config:
   store_entities_as_slots: true
 entities:
@@ -46,8 +46,6 @@ slots:
 templates:
   utter_ask_case:
   - text: 哪个案件?
-  utter_ask_what:
-  - text: 要对案件进行何种操作?
   utter_goodbye:
   - text: 再见~
   - text: 一会见~

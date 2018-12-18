@@ -59,7 +59,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591124\u5211\u521d123\u53f7"}
     - slot{"case": "\u6d591124\u5211\u521d123\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591124\u5211\u521d123\u53f7"}
@@ -70,7 +70,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591124\u5211\u521d123\u53f7"}
     - slot{"case": "\u6d591124\u5211\u521d123\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591124\u5211\u521d123\u53f7"}
@@ -85,7 +85,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591125\u5211\u521d224\u53f7"}
     - slot{"case": "\u6d591125\u5211\u521d224\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591125\u5211\u521d224\u53f7"}
@@ -123,7 +123,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591120\u5211\u521d232\u53f7"}
     - slot{"case": "\u6d591120\u5211\u521d232\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewDefendantData{"defendant": "\u667a\u822a", "item": "\u51fa\u751f\u65e5\u671f"}
     - slot{"defendant": "\u667a\u822a"}
     - slot{"item": "\u51fa\u751f\u65e5\u671f"}
@@ -137,7 +137,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d59120\u5211\u521d11\u53f7"}
     - slot{"case": "\u6d59120\u5211\u521d11\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d59120\u5211\u521d11\u53f7"}
@@ -152,7 +152,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d59123\u5211\u521d123\u53f7"}
     - slot{"case": "\u6d59123\u5211\u521d123\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d59123\u5211\u521d123\u53f7"}
@@ -195,7 +195,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591123\u5211\u521d231\u53f7"}
     - slot{"case": "\u6d591123\u5211\u521d231\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendants
     - action_view_case_defendants
     - slot{"case": "\u6d591123\u5211\u521d231\u53f7"}
@@ -207,7 +207,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591102\u5211\u521d123\u53f7"}
     - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
@@ -231,7 +231,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d59123\u5211\u521d231\u53f7"}
     - slot{"case": "\u6d59123\u5211\u521d231\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d59123\u5211\u521d231\u53f7"}
@@ -251,7 +251,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591123\u5211\u521d12345\u53f7"}
     - slot{"case": "\u6d591123\u5211\u521d12345\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendants
     - action_view_case_defendants
 
@@ -262,7 +262,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591123\u5211\u521d23\u53f7"}
     - slot{"case": "\u6d591123\u5211\u521d23\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendants
     - action_view_case_defendants
 
@@ -284,7 +284,7 @@
     - utter_ask_case
 * viewCaseDefendantsNum{"case": "\u6d591102\u5211\u521d213\u53f7"}
     - slot{"case": "\u6d591102\u5211\u521d213\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591102\u5211\u521d213\u53f7"}
@@ -311,7 +311,7 @@
     - utter_ask_case
 * viewCaseDetail{"case": "\u6d591102\u5211\u521d123\u53f7"}
     - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}
-    - utter_ask_what
+    - action_view_case_detail
 * viewCaseDefendantsNum
     - action_view_case_defendants_num
     - slot{"case": "\u6d591102\u5211\u521d123\u53f7"}

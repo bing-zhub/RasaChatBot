@@ -3,11 +3,11 @@
 actions:
 - utter_ask_case
 - utter_greet
-- utter_ask_what
 - action_view_case_defendants_num
 - action_view_case_defendants
 - utter_goodbye
 - action_view_defendant_data
+- action_view_case_detail
 entities:
 - item
 - defendant
@@ -30,8 +30,6 @@ slots:
 templates:
   utter_ask_case:
   - text: 哪个案件?
-  utter_ask_what:
-  - text: 你想知道点什么?
   utter_goodbye:
   - text: 再见~
   - text: 一会见~

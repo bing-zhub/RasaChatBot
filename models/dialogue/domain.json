@@ -20,9 +20,9 @@
     "prev_utter_greet",
     "prev_utter_goodbye",
     "prev_utter_ask_case",
-    "prev_utter_ask_what",
     "prev_action_view_case_defendants",
     "prev_action_view_case_defendants_num",
-    "prev_action_view_defendant_data"
+    "prev_action_view_defendant_data",
+    "prev_action_view_case_detail"
   ]
 }
