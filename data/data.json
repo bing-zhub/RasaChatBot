@@ -3,22 +3,238 @@
     "common_examples": [
       {
         "text": "你好",
-        "intent": "goodbye",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
         "entities": []
       },
       {
         "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+
+      {
+        "text": "再见",
         "intent": "goodbye",
         "entities": []
       },
       {
-        "text": "再见",
-        "intent": "greet",
-        "entities": []
-      },
-      {
         "text": "拜拜",
-        "intent": "greet",
+        "intent": "goodbye",
         "entities": []
       },
       {
@@ -493,198 +709,6 @@
         ]
       },
       {
-        "text": "什么时候",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 2,
-            "end": 4,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "什么时间",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 2,
-            "end": 4,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "时间",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "在什么时候",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 3,
-            "end": 5,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "哪年的案件",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "日期是几号",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "什么时间的案件",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 2,
-            "end": 4,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "发生于何时",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 3,
-            "end": 5,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "于哪年发生",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 1,
-            "end": 3,
-            "value": "时间",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "哪个法院",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 2,
-            "end": 4,
-            "value": "法院",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "在哪里审判",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 1,
-            "end": 5,
-            "value": "哪里审判",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "什么法院",
-        "intent": "viewCaseDetailData",
-        "entities": [
-          {
-            "start": 2,
-            "end": 4,
-            "value": "法院",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "智航的刑期有多久",
-        "intent": "viewDefendantData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "智航",
-            "entity": "defendant"
-          },
-          {
-            "start": 3,
-            "end": 5,
-            "value": "刑期",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "被判了多久",
-        "intent": "viewDefendantData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "刑期",
-            "entity": "item"
-          }
-        ]
-      },
-      {
-        "text": "被判了多长时间",
-        "intent": "viewDefendantData",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "刑期",
-            "entity": "item"
-          },
-          {
-            "start": 0,
-            "end": 2,
-            "value": "被判",
-            "entity": ""
-          }
-        ]
-      },
-      {
         "text": "刑期有多长",
         "intent": "viewDefendantData",
         "entities": [
@@ -807,6 +831,312 @@
             "end": 3,
             "value": "张青红",
             "entity": "defendant"
+          }
+        ]
+      },
+      {
+        "text": "张远清的出生地是哪里",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "出生地",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清在哪里出生",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "出生地",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的出生地是哪",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "出生地",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清什么时候出生",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "生日",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的生日是什么时候",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "生日",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的个人资料",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "个人资料",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "看一下张远清的个人资料",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "个人资料",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清是男还是女",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "性别",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的性别",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "性别",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的户籍所在地是哪",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 9,
+            "value": "户籍所在地",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的文化程度怎样",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "文化程度",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清贩毒多少克",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "贩毒量",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清卖毒多少克",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "贩毒量",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清是哪个民族",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "民族",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的现住址是哪里",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "现住址",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清的职业是什么",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "职业",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "张远清何时出生",
+        "intent": "viewDefendantData",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "张远清",
+            "entity": "defendant"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "生日",
+            "entity": "item"
           }
         ]
       }

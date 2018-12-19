@@ -52,29 +52,33 @@ class ViewDefendantData(Action):
         print(defendant)
         person = graph.nodes.match("被告人", name=defendant).first()
         response = "-----action----{}, {}".format(defendant, item)
+        if(item==None or defendant==None):
+            dispatcher.utter_message("服务器开小差了")
+            return []
+
         # < id >: 0
         # name: 张青红出生地: 浙江省云和县出生日期: 1979
         # 年8月14日性别: 女户籍所在地: 云和县凤凰山街道上前溪100号文化程度: 初中文化案件号: （2017）浙1125刑初148号毒品数量: 31.3
         # 克民族: 汉族现住址: 丽水市莲都区水阁工业区齐垵村20号2楼职业: 务工
-        if item == "个人资料":
-            response = "{},{}生,户籍所在:{}, :".format(defendant, person['出生日期'], person['户籍所在地'])
-        elif item == "出生地":
-            response = "{}的出生地是{}:".format(defendant, person['出生地'])
-        elif item == "生日":
+        if item.find("个人资料") != -1:
+            response = "{},{},{}生,户籍所在:{}, {}程度, 现住{}, 贩毒{}".format(defendant, person['性别'],person['出生日期'], person['户籍所在地'], person['文化程度'], person['现住址'],person['毒品数量'])
+        elif item.find("出生地") != -1:
+            response = "{}的出生地是{}".format(defendant, person['出生地'])
+        elif item.find("生日") != -1:
             response = "{}的生日是{}".format(defendant, person['出生日期'])
-        elif item == "性别":
+        elif item.find("性别") != -1:
             response = "{}的性别是:{}".format(defendant, person['性别'])
-        elif item == "户籍所在地":
+        elif item.find("户籍所在地") != -1:
             response = "{}的户籍所在地是:{}".format(defendant, person['户籍所在地'])
-        elif item == "文化程度":
+        elif item.find("文化程度") != -1:
             response = "{}的文化程度是:{}".format(defendant, person['文化程度'])
-        elif item == "贩毒量":
+        elif item.find("贩毒量") != -1:
             response = "{}的贩毒量是:{}".format(defendant, person['毒品数量'])
-        elif item == "民族":
+        elif item.find("民族") != -1:
             response = "{}的民族是:{}".format(defendant, person['民族'])
-        elif item == "现住址":
+        elif item.find("现住址") != -1:
             response = "{}的现住址是:{}".format(defendant, person['现住址'])
-        elif item == "职业":
+        elif item.find("职业") != -1:
             response = "{}的职业是:{}".format(defendant, person['职业'])
 
         dispatcher.utter_message(response)
