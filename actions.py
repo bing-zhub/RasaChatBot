@@ -1,9 +1,20 @@
 from py2neo import Graph, NodeMatcher
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
+from socketIO_client import SocketIO, LoggingNamespace
+import requests
+import json
 
 graph = Graph("http://neo4j:admin@localhost:7474")
 selector = NodeMatcher(graph)
+
+# MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*浙1125刑初148号.*' RETURN path
+def retrieveDataFromNeo4j(cyber):
+    url = 'http://neo4j:admin@localhost:7474/db/data/transaction/commit'
+    body = {"statements":[{ "statement":cyber, "resultDataContents":["graph"]}]}
+    headers = {'content-type': "application/json"}
+    response = requests.post(url, data = json.dumps(body), headers = headers)
+    return response.text
 
 
 class ViewCaseDefendants(Action):
@@ -96,8 +107,11 @@ class ViewCaseDetail(Action):
         if(n==0):
             response = "没有找到这个案件, 是不是案件号错了"
         else:
+            graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
+            with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+                socketIO.emit('data', graph_data)
             response = "需要我做点什么?"
-
+            
         dispatcher.utter_message(response)
         return [SlotSet('case',case)]
 
