@@ -13,7 +13,6 @@
 ## story_05
 * viewCase
   - utter_ask_case
-## story_06
 
 ## Generated Story -3691124997186437890
 * greet
