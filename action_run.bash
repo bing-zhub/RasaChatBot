@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-
-python -m rasa_core_sdk.endpoint --actions actions
+python server.py & python -m rasa_core_sdk.endpoint --actions actions
