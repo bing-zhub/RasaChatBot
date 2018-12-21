@@ -23,6 +23,9 @@ class ViewCaseDefendants(Action):
 
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
+        if(case==None):
+            dispatcher.utter_message("服务器开小差了")
+            return []
         all_defendants = ""
         a = list(selector.match("被告人", 案件号__contains=case))
         for _ in a:
@@ -32,6 +35,9 @@ class ViewCaseDefendants(Action):
                 all_defendants = all_defendants + _['name'] + ','
         response = "{}案件, 有涉案人员:{}".format(case, all_defendants)
         dispatcher.utter_message(response)
+        graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
+        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+            socketIO.emit('data', graph_data)
         return [SlotSet('case', case)]
 
 
@@ -41,14 +47,18 @@ class ViewCaseDefendantsNum(Action):
 
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
-
+        if(case==None):
+            dispatcher.utter_message("服务器开小差了")
+            return []
         n = list(selector.match("被告人", 案件号__contains=case)).__len__()
 
         if(n == 0):
             response = "没有这个案件, 查证后再说吧~"
         else:
             response = "{}案件共有{}个涉案人员".format(case, n)
-
+        graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
+        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+            socketIO.emit('data', graph_data)
         dispatcher.utter_message(response)
         return [SlotSet('case', case)]
 
@@ -60,7 +70,6 @@ class ViewDefendantData(Action):
     def run(self, dispatcher, tracker, domain):
         defendant = tracker.get_slot('defendant')
         item = tracker.get_slot('item')
-        print(defendant)
         person = graph.nodes.match("被告人", name=defendant).first()
         response = "-----action----{}, {}".format(defendant, item)
         if(item==None or defendant==None):
@@ -92,6 +101,9 @@ class ViewDefendantData(Action):
         elif item.find("职业") != -1:
             response = "{}的职业是:{}".format(defendant, person['职业'])
 
+        graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.name =~ '.*{}.*' RETURN path".format(defendant))
+        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+            socketIO.emit('data', graph_data)
         dispatcher.utter_message(response)
         return [SlotSet('defendant', defendant)]
 
@@ -102,6 +114,9 @@ class ViewCaseDetail(Action):
 
     def run(self, dispatcher, tracker, domain):
         case = tracker.get_slot('case')
+        if(case==None):
+            dispatcher.utter_message("服务器开小差了")
+            return []
         found = graph.nodes.match("被告人", 案件号__contains=case)
         n = list(found).__len__()
         if(n==0):
