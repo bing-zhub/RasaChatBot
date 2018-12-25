@@ -35,9 +35,6 @@ class ViewCaseDefendants(Action):
                 all_defendants = all_defendants + _['name'] + ','
         response = "{}案件, 有涉案人员:{}".format(case, all_defendants)
         dispatcher.utter_message(response)
-        graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
-        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
-            socketIO.emit('data', graph_data)
         return [SlotSet('case', case)]
 
 
@@ -57,7 +54,7 @@ class ViewCaseDefendantsNum(Action):
         else:
             response = "{}案件共有{}个涉案人员".format(case, n)
         graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
-        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+        with SocketIO('localhost', 8080) as socketIO:
             socketIO.emit('data', graph_data)
         dispatcher.utter_message(response)
         return [SlotSet('case', case)]
@@ -71,7 +68,7 @@ class ViewDefendantData(Action):
         defendant = tracker.get_slot('defendant')
         item = tracker.get_slot('item')
         person = graph.nodes.match("被告人", name=defendant).first()
-        response = "-----action----{}, {}".format(defendant, item)
+        response = "这个系统还够完善, 没有找到{}关于'{}'的信息, 抱歉哦..".format(defendant, item)
         if(item==None or defendant==None):
             dispatcher.utter_message("服务器开小差了")
             return []
@@ -102,7 +99,7 @@ class ViewDefendantData(Action):
             response = "{}的职业是:{}".format(defendant, person['职业'])
 
         graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.name =~ '.*{}.*' RETURN path".format(defendant))
-        with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+        with SocketIO('localhost', 8080) as socketIO:
             socketIO.emit('data', graph_data)
         dispatcher.utter_message(response)
         return [SlotSet('defendant', defendant)]
@@ -123,7 +120,7 @@ class ViewCaseDetail(Action):
             response = "没有找到这个案件, 是不是案件号错了"
         else:
             graph_data = retrieveDataFromNeo4j("MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*{}.*' RETURN path".format(case))
-            with SocketIO('localhost', 8080, LoggingNamespace) as socketIO:
+            with SocketIO('localhost', 8080) as socketIO:
                 socketIO.emit('data', graph_data)
             response = "需要我做点什么?"
             
