@@ -7,12 +7,11 @@
 ![Demo][1]
 
 ## 技术架构
-![Architecture][2]
+![pipeline][2]
 [参考](https://rasa.com/docs/get_started_step1/)
 
 ### 模块化
 Action - Rasa NLU - Rasa Core - Web Server
-
 ### Context保存
 将所需要的entities放入不同slot中(通过Rasa-core实现)
 ### 基于意图(Intent-based)的对话
@@ -53,19 +52,14 @@ pipeline:
 - name: "intent_featurizer_mitie"
 - name: "intent_classifier_sklearn"
 ```
-
-MITIE是一个MIT信息提取库，该库使用了最先进的统计机器学习工具构建。
-它类似于word2vec中的word embedding。
-MITIE模型，在NLU（自然语言理解）系统中，完成实体识别和意图提示的任务。
-
-1. nlp_mitie初始化MITIE
-2. tokenizer_jieba用jieba来做分词
-3. ner_mitie和ner_synonyms做实体识别
-4. intent_featurizer_mitie为意图识别做特征提取
-5. intent_classifier_sklearn使用sklearn做意图识别的分类。
+MITIE是一个MIT信息提取库，该库使用了最先进的统计机器学习工具构建。它类似于word2vec中的word embedding。MITIE模型，在NLU（自然语言理解）系统中，完成实体识别和意图提示的任务。
+”nlp_mitie”初始化MITIE
+”tokenizer_jieba”用jieba来做分词
+”ner_mitie”和”ner_synonyms”做实体识别
+”intent_featurizer_mitie”为意图识别做特征提取”intent_classifier_sklearn”使用sklearn做意图识别的分类。
 
 ### Training
-训练集`data.json`
+我们的训练集`data.json`
 ``` json
 {
   "rasa_nlu_data": {
@@ -92,7 +86,7 @@ MITIE模型，在NLU（自然语言理解）系统中，完成实体识别和意
   }
 }
 ```
-也可以通过[可视化工具(rasa-nlu-trainer)](https://github.com/RasaHQ/rasa-nlu-trainer)进行实体的标注/意图分类等
+也可以通过[可视化工具(rasa-nlu-trainer)](https://github.com/RasaHQ/rasa-nlu-trainer)进行实体的标注等
 ![Rasa-nlu-trainer][5]
 ### Run as a service
 ``` bash
@@ -137,7 +131,7 @@ curl -XPOST localhost:5000/parse -d '{"q":"张青红的生日是什么时候", "
 
 ### Action
 进行数据校验, 和数据交互. 
-采用Py2Neo与图数据库(Neo4j)进行交互. 
+采用Py2Neo与数据库(Neo4j)进行交互. 
 
   [1]: http://images.zshaopingb.cn/2018/12/3664281616.png
   [2]: http://images.zshaopingb.cn/2018/12/4005670685.png
