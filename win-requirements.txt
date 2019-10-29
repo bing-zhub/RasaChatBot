@@ -121,7 +121,7 @@ PySocks==1.6.8
 pytest==4.0.2
 python-crfsuite==0.9.6
 python-dateutil==2.7.5
-python-engineio==3.0.0
+python-engineio==3.8.2.post1
 python-socketio==2.1.2
 python-telegram-bot==10.1.0
 pytz==2018.7
