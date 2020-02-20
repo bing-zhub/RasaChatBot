@@ -133,9 +133,9 @@ curl -XPOST localhost:5000/parse -d '{"q":"张青红的生日是什么时候", "
 进行数据校验, 和数据交互. 
 采用Py2Neo与数据库(Neo4j)进行交互. 
 
-  [1]: http://images.zshaopingb.cn/2018/12/3664281616.png
-  [2]: http://images.zshaopingb.cn/2018/12/4005670685.png
-  [3]: http://images.zshaopingb.cn/2018/12/4136964647.png
-  [4]: http://images.zshaopingb.cn/2018/12/923236055.jpg
-  [5]: http://images.zshaopingb.cn/2018/12/2537130720.jpg
-  [6]: http://images.zshaopingb.cn/2018/12/1133622055.png
+  [1]: http://assets.bingware.cn/2018/12/3664281616.png
+  [2]: http://assets.bingware.cn/2018/12/4005670685.png
+  [3]: http://assets.bingware.cn/2018/12/4136964647.png
+  [4]: http://assets.bingware.cn/2018/12/923236055.jpg
+  [5]: http://assets.bingware.cn/2018/12/2537130720.jpg
+  [6]: http://assets.bingware.cn/2018/12/1133622055.png
