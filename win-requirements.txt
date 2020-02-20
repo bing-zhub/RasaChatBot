@@ -127,7 +127,7 @@ python-telegram-bot==10.1.0
 pytz==2018.7
 pywin32==224
 pywinpty==0.5.5
-PyYAML==3.12
+PyYAML==5.1
 pyzmq==18.0.2
 qtconsole==4.5.1
 rasa-core==0.12.3
