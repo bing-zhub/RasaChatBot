@@ -155,7 +155,7 @@ socketIO-client-2==0.7.2
 spacy==2.0.5
 tabulate==0.8.2
 tensorboard==1.10.0
-tensorflow==1.10.0
+tensorflow==1.15.4
 termcolor==1.1.0
 terminado==0.8.2
 terminaltables==3.1.0
