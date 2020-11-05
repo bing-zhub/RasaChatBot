@@ -30,23 +30,57 @@ selector = NodeMatcher(graph)
 
 class MyNode(object):
     def __init__(self, node_dict):
+        """
+        Initialize a node.
+
+        Args:
+            self: (todo): write your description
+            node_dict: (dict): write your description
+        """
         self.id = node_dict.get('id')
         self.labels = node_dict.get('labels')
         self._update_properties(node_dict.get("id"), node_dict.get('properties'))
 
     def _update_properties(self, id, properties):
+        """
+        Updates the properties of the object.
+
+        Args:
+            self: (todo): write your description
+            id: (todo): write your description
+            properties: (todo): write your description
+        """
         self.properties = properties
         self.properties['id'] = str(id)
 
     def __repr__(self) -> str:
+        """
+        Return a repr representation of this object.
+
+        Args:
+            self: (todo): write your description
+        """
         return str(self.__dict__)
 
     def get_node(self):
+        """
+        Returns a node.
+
+        Args:
+            self: (todo): write your description
+        """
         return Node(**self.labels, **self.properties)
 
 
 class MyRelation(object):
     def __init__(self, relation_dict):
+        """
+        Initialize a relation.
+
+        Args:
+            self: (todo): write your description
+            relation_dict: (dict): write your description
+        """
         self.id = relation_dict.get('id')
         self.type = relation_dict.get('type')
         self.startNode = relation_dict.get('startNode')
@@ -54,10 +88,24 @@ class MyRelation(object):
         self._update_properties(relation_dict.get("id"), relation_dict.get('properties'))
 
     def _update_properties(self, id, properties):
+        """
+        Updates the properties of the object.
+
+        Args:
+            self: (todo): write your description
+            id: (todo): write your description
+            properties: (todo): write your description
+        """
         self.properties = properties
         self.properties['id'] = str(id)
 
     def __repr__(self) -> str:
+        """
+        Return a repr representation of this object.
+
+        Args:
+            self: (todo): write your description
+        """
         return str(self.__dict__)
 
 
@@ -99,6 +147,11 @@ for relationship_id, relationship in relationship_dict.items():
 
 
 def create_graph():
+    """
+    Create a graph
+
+    Args:
+    """
     a = Node('被告人', **{
         "id": "1",
         "毒品数量": "12.73克",

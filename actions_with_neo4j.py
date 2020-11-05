@@ -11,6 +11,12 @@ selector = NodeMatcher(graph)
 
 # MATCH path = (n)-[r]->(m) where n.案件号 =~ '.*浙1125刑初148号.*' RETURN path
 def retrieveDataFromNeo4j(cyber):
+    """
+    Downloads a dictionary of a given cyber4
+
+    Args:
+        cyber: (todo): write your description
+    """
     url = 'http://neo4j:neo4j@127.0.0.1:7474/db/data/transaction/commit'
     body = {"statements": [{"statement": cyber, "resultDataContents": ["graph"]}]}
     headers = {'content-type': "application/json; charset=utf-8"}
@@ -21,9 +27,24 @@ def retrieveDataFromNeo4j(cyber):
 # 查看案例被告
 class ViewCaseDefendants(Action):
     def name(self):
+        """
+        Return the name for this node.
+
+        Args:
+            self: (todo): write your description
+        """
         return 'action_view_case_defendants'
 
     def run(self, dispatcher, tracker, domain):
+        """
+        Run a participant.
+
+        Args:
+            self: (todo): write your description
+            dispatcher: (todo): write your description
+            tracker: (todo): write your description
+            domain: (str): write your description
+        """
         case = tracker.get_slot('case')
         if (case == None):
             dispatcher.utter_message("服务器开小差了")
@@ -43,9 +64,24 @@ class ViewCaseDefendants(Action):
 # 查看涉案人员
 class ViewCaseDefendantsNum(Action):
     def name(self):
+        """
+        Return the name for this node.
+
+        Args:
+            self: (todo): write your description
+        """
         return 'action_view_case_defendants_num'
 
     def run(self, dispatcher, tracker, domain):
+        """
+        Run the utterances.
+
+        Args:
+            self: (todo): write your description
+            dispatcher: (todo): write your description
+            tracker: (todo): write your description
+            domain: (str): write your description
+        """
         case = tracker.get_slot('case')
         if (case == None):
             dispatcher.utter_message("服务器开小差了")
@@ -64,9 +100,24 @@ class ViewCaseDefendantsNum(Action):
 # 查看被告信息
 class ViewDefendantData(Action):
     def name(self):
+        """
+        Return the name for this node.
+
+        Args:
+            self: (todo): write your description
+        """
         return 'action_view_defendant_data'
 
     def run(self, dispatcher, tracker, domain):
+        """
+        Runs a participant.
+
+        Args:
+            self: (todo): write your description
+            dispatcher: (todo): write your description
+            tracker: (todo): write your description
+            domain: (str): write your description
+        """
         defendant = tracker.get_slot('defendant')
         item = tracker.get_slot('item')
         person = graph.nodes.match("被告人", name=defendant).first()
@@ -111,9 +162,24 @@ class ViewDefendantData(Action):
 # 查看案件详情
 class ViewCaseDetail(Action):  # TODO
     def name(self):
+        """
+        Return the name for this node.
+
+        Args:
+            self: (todo): write your description
+        """
         return 'action_view_case_detail'
 
     def run(self, dispatcher, tracker, domain):
+        """
+        Runs : class.
+
+        Args:
+            self: (todo): write your description
+            dispatcher: (todo): write your description
+            tracker: (todo): write your description
+            domain: (str): write your description
+        """
         case = tracker.get_slot('case')
         if (case == None):
             dispatcher.utter_message("服务器开小差了")
