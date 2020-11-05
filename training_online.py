@@ -15,6 +15,14 @@ logger = logging.getLogger(__name__)
 def run_criminal_online(interpreter,
                           domain_file="data/criminal_domain.yml",
                           training_data_file='data/stories.md'):
+    """
+    Run the training of training.
+
+    Args:
+        interpreter: (int): write your description
+        domain_file: (str): write your description
+        training_data_file: (str): write your description
+    """
     action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")						  
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(max_history=2), 
