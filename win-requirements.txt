@@ -6,7 +6,7 @@ async-timeout==3.0.1
 atomicwrites==1.2.1
 attrs==18.2.0
 Automat==0.7.0
-bleach==1.5.0
+bleach==3.3.0
 boto3==1.5.20
 botocore==1.8.50
 certifi==2019.6.16
