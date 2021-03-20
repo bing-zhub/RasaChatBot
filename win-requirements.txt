@@ -54,7 +54,7 @@ ipywidgets==7.5.0
 itsdangerous==1.1.0
 jedi==0.14.0
 jieba==0.39
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 JPype1==0.6.2
 jsonpickle==0.9.6
