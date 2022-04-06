@@ -167,7 +167,7 @@ tqdm==4.19.5
 traitlets==4.3.2
 Tubes==0.2.0
 twilio==6.21.0
-Twisted==19.7.0
+Twisted==22.2.0
 typing==3.6.2
 typing-extensions==3.7.4
 tzlocal==1.5.1
