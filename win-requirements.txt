@@ -110,7 +110,7 @@ pydot-ng==2.0.0
 Pygments==2.3.0
 PyHamcrest==1.9.0
 PyInquirer==1.0.3
-PyJWT==1.7.1
+PyJWT==2.4.0
 pykwalify==1.6.0
 pymongo==3.7.2
 pyparsing==2.3.0
