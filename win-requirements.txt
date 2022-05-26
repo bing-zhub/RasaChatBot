@@ -171,7 +171,7 @@ Twisted==19.7.0
 typing==3.6.2
 typing-extensions==3.7.4
 tzlocal==1.5.1
-ujson==1.35
+ujson==5.2.0
 urllib3==1.22
 wcwidth==0.1.7
 webencodings==0.5.1
