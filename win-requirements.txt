@@ -9,7 +9,7 @@ Automat==0.7.0
 bleach==1.5.0
 boto3==1.5.20
 botocore==1.8.50
-certifi==2019.6.16
+certifi==2022.12.7
 cffi==1.12.3
 characteristic==14.3.0
 chardet==3.0.4
